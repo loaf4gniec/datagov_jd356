@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loaf4gniec-datagov_jd356"
+version = "0.1.0"
+description = "为每一项打分并与阈值比较，明确标出通过、边界与不通过三档"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "loaf4gniec" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://loaf4gniec.github.io"
+Repository = "https://github.com/loaf4gniec/datagov_jd356"
+Issues = "https://github.com/loaf4gniec/datagov_jd356/issues"
+
+[project.scripts]
+datagov_jd356 = "datagov_jd356:main"
+
+[tool.setuptools]
+py-modules = ["datagov_jd356"]
